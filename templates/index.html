@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <style>
+        nav{
+    height: 70px;
+    background-color:  #165666;
+}
+
+.abb{
+    margin-right: 55px;
+    font-size: large;
+}
+
+.navbar-brand{
+    margin-left: 50px;
+    font-size: x-large;
+}
+
+.abcd{
+    height: 500px;
+    background-color: #0d98ba;
+}
+
+.banner{
+    padding-top: 150px;
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+  }
+
+.ph{
+    margin-right:100px;
+}
+
+    </style>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">SENTIMENT ANALYZER</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active abb">
+              <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
+            </li>
+            </li>
+            <li class="nav-item abb">
+              <a class="nav-link" href="./analysis.html">Analysis</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    
+      <div class="abcd"> 
+          <div class="row">
+              <div class="col-sm-6 ">
+                  <h1 class="banner" style="color: aliceblue; margin-top: 50px;"> <center>Restaurant Reviews</center> </h1>
+                  <h1 class="banner2" style="color: aliceblue;"> <center>Sentiment Analysis</center></h1>
+              </div>
+              <div class="col-sm-6">
+                  <img style="max-width: 20%; margin-left: 250px; margin-bottom:30px; margin-top:10px;" src="{{url_for('static', filename= '233.png')}}" alt="">
+                  <img style="max-width: 100%;" src="{{url_for('static', filename= 'Restaurant_1_clip_art.png')}}" alt="">
+              </div>
+          </div>
+      </div><br><br>
+
+      <div class="container-fluid">
+        <center><h2>Restaurant Reviews For Sentiment Analysis</h2></center><br>
+        <center><h4>To determine how the customer base feels about certain product and Reviews</h4></center><br>
+        <div class="row">
+            <div class="col-sm-6">
+                <img style="width: 400px; margin-left:150px ;" src="{{url_for('static', filename= 'SA.png')}}" alt="">
+            </div>
+            <div class="col-sm-6">
+                <br><br>
+                <h3 class='ph'>Problem Statement</h3><br>
+                <p class='ph'>It has become very important for E-commerce organizations to know what their 
+                    customers think about their products. Knowing this data is crucial for the organizations to change 
+                    their business as required. Build an application to analyze sentiments and classify them into positive 
+                    and negative sentiments.</p>
+            </div>    
+        </div>
+        
+      </div><br>
+
+      <hr><br><br>
+
+
+    <div class="container-fluid">
+        <center><h2><b>IMPLEMENTATION</b></h2></center><br>
+        <center><h3>Data Insights</h3></center><br>
+        <center><h4>Accuracy - 77%</h4></center><br>
+        <div class="row">
+            <div class="col-sm-6">
+                <img style="max-width: 100%; height:320px; border:1px solid black; margin-left: 60px;" src="{{url_for('static', filename= 'graph.png')}}" alt="">
+            </div>
+            <div class="col-sm-6">
+                <img style="max-width: 100%; height: 320px; border:1px solid black;" src="{{url_for('static', filename= 'acc.png')}}" alt="">
+            </div>
+        </div>
+
+
+        <center><br><h3>Bag Of Words</h3></center><br>
+    <div class="row">
+        <div class="col-sm-6">
+            <center><h3>Positive Words</h3></center><br>
+            <img style="max-width:100%" src="{{url_for('static', filename= '15.jpeg')}}" alt="">
+        </div>
+    <div class="col-sm-6">
+        <div>
+            <center><h3>Negative Words</h3></center><br>
+            <img style="max-width: 100%;" src="{{url_for('static', filename= '16.jpeg')}}" alt="">
+        </div>
+    </div>
+</div>
+</div><br><br>
+
+<footer style="height: 75px; background-color: #165666;"> 
+    <center><h5 style="color: aliceblue; padding-top: 30px;">Sentiment Analyzer</h5></center>
+</footer>
+    
+    
+  
+
+
+</body>
+</html>
